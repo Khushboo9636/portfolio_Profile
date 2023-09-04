@@ -1,0 +1,444 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
+}
+body{
+  
+ overflow: visible;
+    
+
+}
+.container{
+    width: 100%;
+    min-height: 10vh;
+    background-color: #f3f5f8;
+    margin: 0;
+    padding-bottom: 100px;
+   
+    
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    padding-top: 10px;
+   
+    line-height: 80px;
+   
+ }
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font-size: 70px;
+    color: #7f00ff;
+}
+.navItems{
+    display: flex;
+}
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 30px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.navItems li:hover a,.links a:hover{
+    color: #7f00ff;
+}
+.link a{
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:center ;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.section.container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 22px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+
+}
+.section-title h2{
+    font-size: 50px;
+    color: #3d535f;
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 90px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 105%;
+    left: 0;
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 55px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    margin-top: 8px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+   
+}
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #3d535f;
+
+}
+.about .about-content .about-text h3 span{
+    color: #7f00ff;
+}
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #3d535f;
+    font-family: sans-serif;
+
+
+}
+.about .about-content .personal-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+ 
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;
+    max-width: 80%;
+    padding-left: 15px;
+}
+.about .about-content .personal-info .info-item p{
+    font-weight: 600;
+    padding: 10px 0 20px 10px;
+    font-size: 16px;
+    color: #1b597a ;
+    border-bottom: 1px solid #3d535f;
+
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;
+    color: #3d535f;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.about .about-content .skills{
+    flex:0 0 40%;
+    max-width: 40%;
+    
+    margin-top: 40px;
+}
+.btn{
+
+    text-decoration: none;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+.button{
+    width: 100%;
+    position: relative;
+    left:20px;
+    top: 30px;
+     
+
+}
+.button:hover{
+    background-color: #7f00ff;
+}
+.about .about-content .personal-info .button{
+    margin-top: 30px;
+}
+.about .about-content .personal-info .button .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.about .about-content .skills .skill-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+   
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1b597a;
+    text-transform: capitalize;
+
+}
+.about .about-content .skills .skill-item .progress{
+    background-color: #658799;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #7f00ff;
+
+}
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: #3d535f;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+
+}
+
+.about .about-content .education,
+.about .about-content .experience{
+ flex: 0 0 50%;
+ max-width: 50%;
+ margin-top: 30px;
+
+ padding: 15px;
+}
+
+.about .about-content h3.title{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #3d535f;
+    padding-left: 30px;
+}
+.about .about-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline{
+    background-color: #f5ffff;
+    padding: 30px 15px;
+    border: 1px solid #9bcce6;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item {
+position: relative;
+padding-left: 37px;
+padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child{
+ padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before
+{
+content: '';
+width: 2px;
+position: absolute;
+height: 100%;
+left: 7px;
+top: 0;
+background-color: #7f00ff;
+}
+.about .about-content .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #7f00ff;
+
+}
+.about .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #3d535f;
+}
+.about .about-content .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #3d535f;
+    text-transform: capitalize;
+}
+.about .about-content .timeline .timeline-text{
+    line-height: 20px;
+    font-size: 15px;
+    text-align: justify;
+    color: #3d535f;
+    font-family: sans-serif;
+}
+/* contact  */
+.contact-title{
+    color: #7f00ff;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title{
+    color: #3d535f;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 60px;
+ 
+}
+.contact .contact-info-item{
+ flex: 4 0 30%;
+ max-width: 50%;
+ text-align: center;
+ margin-bottom: 60px;
+}
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+.contact-info-item .icon .fa{
+    font-size: 25px;
+    color: #7f00ff;
+}
+.contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3d535f;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #3d535f;
+}
+.contact .contact-form{
+    flex:0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+   
+
+}
+.contact .contact-form .form-item
+{
+    margin-bottom: 30px;
+
+}
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #f5ffff;
+    border: 1px solid #9fa2a3;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #3d535f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+.contact .contact-form .btn{
+    height: 50px;
+    padding: 0 50px;
+}
+
+
+.portfolio .portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+
+}
+.portfolio .portfolio-heading h2 {
+    color: #3d535f;
+    font-weight: 500;
+}
+.portfolio .container{
+    padding-bottom: 40px;
+}
+
+.portfolio .portfolio-item 
+{
+   
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}

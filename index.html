@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset=""UTF-8>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title> Personal Portfolio Website </title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio<b>.</b></div>
+                <ul class="navItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                   
+                    <li><a href="./project.html">Project</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    
+                </ul>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/khushboo-kumari-691ba51a3/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Khushboo9636"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/khushi_k.h.u.s.h/"><i class="fab fa-instagram"></i></a>
+            
+                </div>
+            </nav>
+            <div class="wrapper">
+                <div class="cols cols0"> 
+                    <span class="topline">Hello</span>
+                    <h1>I'm <span class="multiText" id="ele"></span></h1>
+                    <p>I am <span style="color: #7f00ff;; font-weight: 700;">Khushboo kumari</span>. I had completed my B.Tech in 2022 in <span style="color: #7f00ff;; font-weight: 700;"> Computer Science and Engineering</span> Branch. As a skilled and dedicated Software Engineer, I have gained valuable experience in software development,  iOs development and web technologies, including proficiency in C++, data structures, HTML, CSS, Swift and JavaScript. With a Bachelor's degree in Computer Science and Engineering from Shri Shankaracharya Technical Campus, I have also acquired essential knowledge in software design, Web development, iOS development, and core Java.</p>
+                    <div class="btns">
+                        <a href="Khushboo_ResumeUpdated_GitHub.pdf" download="Khushboo_ResumeUpdated_GitHub.pdf">
+                        <button> download CV</button>
+                    </a>
+                    <a href="contact.html">
+                        <button> Hire me</button>
+                    </a>
+                    </div>
+                </div>
+                <div class="cols cols1">
+                    <div class="imgbox">
+                        
+                        <img src="image/myimage.jpeg" >
+    
+                     </div>
+                      
+                </div>
+            </div>
+
+        </div>
+        
+        
+
+          <!-- Element to contain animated typing -->
+  
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#ele', {
+      strings: ['Software ENGINEER', 'Frontend developer','coder','Data Analyst'],
+      loop:true,
+      typeSpeed: 100,
+      
+      backspeed:80,
+      backDelay:1500
+    });
+  </script>
+</body>
+    </body>
+</html>

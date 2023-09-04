@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset=""UTF-8>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title> Personal Portfolio Website </title>
+    </head>
+ <body>
+    <div class="container">
+        <nav>
+            <div class="logo">Portfolio<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./project.html">Project</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/khushboo-kumari-691ba51a3/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Khushboo9636"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/khushi_k.h.u.s.h/"><i class="fab fa-instagram"></i></a>
+               
+            </div>
+        </nav>
+        
+        <div class="wrapper">
+            <section class="contact section">
+               <div class="container">
+                  <div class="row">
+                   <div class="section-title">
+                  <h2>Contact Me</h2>
+                </div>
+                </div>
+                <h3 class="contact-title">Have You any Questions? </h3>
+                <h4 class="contact-sub-title">I'M AT YOUR SERVICES</h4>
+                <div class="row">
+                    <!--items-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Me On </h4>
+                        <p>+91 6268481463</p>
+                    </div>
+                     <!--items-->
+                     <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <h4>Location </h4>
+                        <p>Patna</p>
+                    </div>
+                      
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4> Email</h4>
+                        <p>Khushboo.kumari31july@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                        <h4> Website</h4>
+                        <p>https://www.linkedin.com/in/khushboo-kumari-691ba51a3/</p>
+                    </div>
+                   
+                </div>
+                <h3 class="contact-title padd-15">SEND ME MAIL OR MESSAGES BY USING sinhakhushboo31@gmil.com(Fill this mail in form in place of Email)</h3>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                  
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" id="name"  name="name"   class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" id="email"  name="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" id="subject" name="subject"  class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" placeholder="Messages"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" value="Send Email" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        </div>
+                    </div>
+                </div>
+           
+           
+          </section>
+
+        </div>
+    </div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+        Email.send({
+             Host : "smtp.elasticemail.com",
+            Username : "sinhakhushboo31@gmail.com",
+             Password : "08C25D7D08A99D974E9F68DCD01E70BB40BA",
+             To : 'khushboo.kumari31july@gmail.com',
+            From : document.getElementById("email").value,
+           Subject : "New Contact Form Enquiry",
+           Body : "And this is the body"
+        }).then(
+           message => alert(message)
+          );
+    }
+  </script>
+  </body>
+  </html>
